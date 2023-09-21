@@ -18,14 +18,14 @@
         $telefono = "654332211 - 933332211";
         $direccion = "Carrer de Turin, 15";
         $correo = "kurt.cagle@example.com";
-        $trabaja = "Si";
+        $trabaja = true;
         $altura = 1.67;
         
     ?>
 
-    <h1>Descrivint a Kurt Cagle</h1>
+    <h1>Descrivint a  <?php echo $nombre; ?> <?php echo $apellido; ?></h1>
 
-    <h2>Les dades de Kurt son:</h2>
+    <h2>Les dades de <?php echo $nombre; ?>  son:</h2>
 
     <ul>
         <li>Es diu <?php echo $nombre; ?></li>
@@ -34,7 +34,7 @@
         <li>Els seus teléfons son: <?php echo $telefono; ?></li>
         <li>Viu a: <?php echo $direccion; ?></li>
         <li>El seu email es: <?php echo $correo; ?></li>
-        <li>Traeballa: <?php echo $trabaja; ?></li>
+        <li>Treballa: <?php echo $trabaja ? "Si" : "No"; ?></li>
         <li>I medeix: <?php echo $altura; ?></li>
     </ul>
 
